@@ -1,9 +1,8 @@
 ---
 services:
-
     sharelatex:
         restart: always
-        image: "${IMAGE}"
+        image: pingwin02/sharelatex-arm:full-2025-08-20@sha256:ad5b61f52e8a4d6cfed69219c6997a477bf0a3e217bdffd676b757e9afdd6714
         container_name: sharelatex
         volumes:
             - "${OVERLEAF_DATA_PATH}:${OVERLEAF_IN_CONTAINER_DATA_PATH}"
